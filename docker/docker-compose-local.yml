@@ -21,6 +21,11 @@ services:
         environment:
             - LOAD_EX=n
             - EXECUTOR=Local
+            - AWS_DEFAULT_REGION=us-west-2
+            - AWS_REGION=us-west-2
+            - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+            - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+            - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}
         logging:
             options:
                 max-size: 10m
@@ -29,7 +34,6 @@ services:
             - "${PWD}/dags:/usr/local/airflow/dags"
             - "${PWD}/plugins:/usr/local/airflow/plugins"
             - "${PWD}/requirements:/usr/local/airflow/requirements"
-            - "${PWD}/startup_script:/usr/local/airflow/startup"
         ports:
             - "8080:8080"
         command: local-runner

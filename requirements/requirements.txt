@@ -1,4 +1,20 @@
 --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.5.1/constraints-3.10.txt"
+apache-airflow-providers-ssh
+apache-airflow-providers-amazon
+apache-airflow-providers-snowflake
+apache-airflow-providers-mysql
+requests
+apache-airflow-providers-jira
 
-apache-airflow-providers-snowflake==4.0.2
-apache-airflow-providers-mysql==4.0.0
+
+# Numeric utilities
+numpy
+scipy
+scikit-learn
+statsmodels
+prophet
+pandas
+
+# COSMO
+db_dtypes
+google-cloud-bigquery
