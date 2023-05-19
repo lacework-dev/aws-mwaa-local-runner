@@ -56,7 +56,6 @@ def SnowflakeETLDAG(**kwargs) -> DAG:
         "database": "LW_DW",
         "schema": "ETL",
         "role": "internal_portal",
-        "mode": "reschedule",
     }
     default_args.update(kwargs.get("default_args", {}))
     kwargs["default_args"] = default_args
