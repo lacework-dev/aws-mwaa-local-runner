@@ -5,7 +5,7 @@ apache-airflow-providers-snowflake
 apache-airflow-providers-mysql
 requests
 apache-airflow-providers-jira
-
+apache-airflow-providers-slack
 
 # Numeric utilities
 numpy
