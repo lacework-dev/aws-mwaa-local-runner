@@ -1,3 +1,7 @@
+# Don't use this repo
+
+Lacework's internal Security team has found [CVE-2024-25128](https://lacework.atlassian.net/browse/FIXIT24-55) in this repo; we plan to delete it altogether, since it's used rarely anyway. If you don't want it to be deleted, pls reach out to Kanak Chavda by end of day 6/14/2024.
+
 # About aws-mwaa-local-runner
 
 This repository provides a command line interface (CLI) utility that replicates an Amazon Managed Workflows for Apache Airflow (MWAA) environment locally.
